@@ -1,12 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View} from 'react-native';
+import React from 'react';
+import Splasher from '../screens/splasher/Splasher';
 
 const Navigation = () => {
   return (
     <View>
-      <Text>Navigation</Text>
+      <Splasher/>
     </View>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

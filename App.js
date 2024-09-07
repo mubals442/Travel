@@ -1,8 +1,13 @@
 import React from 'react';
-import Splasher from './src/screens/splasher/Splasher';
+import {SafeAreaView} from 'react-native';
+import Navigation from './src/navigation/Navigation';
 
 function App() {
-  return <Splasher />;
+  return (
+    <SafeAreaView>
+      <Navigation />
+    </SafeAreaView>
+  );
 }
 
 export default App;
