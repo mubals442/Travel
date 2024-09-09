@@ -1,19 +1,35 @@
 import {View, Text, SafeAreaView, Image} from 'react-native';
 import React, {useState} from 'react';
 
-import dataObj from '../dataBase/dataUser.json';
+import dataOfUserObj from '../dataBase/user.json';
+import {responsiveWidth} from 'react-native-responsive-dimensions';
 
 const Header = () => {
-  const [data, setData] = useState({...dataObj});
+  const [user, setUser] = useState({...dataOfUserObj});
 
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{
+        marginHorizontal: 30,
+        marginTop: 15,
+        flexDirection: 'row-reverse',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom:13
+      }}>
+      <View
+        style={{
+          backgroundColor: 'gray',
+          width: responsiveWidth(10),
+          height: responsiveWidth(10),
+          borderRadius: responsiveWidth(100) / 2,
+        }}></View>
+
       <View>
-        {/* <Image source={require(`${dataObj.avatar}`)} /> */}
-        <View>
-          <Text>Hi, {dataObj.name} 👋</Text>
-          <Text>Explore the world</Text>
-        </View>
+        <Text style={{fontWeight: 'bold', fontSize: 30, color: 'black'}}>
+          Hi, {user.name} 👋
+        </Text>
+        <Text style={{fontSize: 20}}>Explore the world</Text>
       </View>
     </SafeAreaView>
   );

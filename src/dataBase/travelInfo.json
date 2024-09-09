@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title_en": "Mount Fuji,Tokyo",
+    "title_ar": "جبل فوجي ، طوكيو",
+    "location_en": "Tokyo, Japan",
+    "location_ar": "طوكيو ، اليابان",
+    "price": 2750,
+    "rating": 4.8,
+    "time": 16,
+    "temperature": 6,
+    "image": "https://www.tatbeqi.com/wp-content/uploads/2017/03/3-57.jpg"
+  },
+  {
+    "id": 2,
+    "title_en": "Andes, South America",
+    "title_ar": "جبال الأنديز ، أمريكا الجنوبية",
+    "location_en": "South America",
+    "location_ar": "أمريكا الجنوبية",
+    "price": 2250,
+    "rating": 4.7,
+    "time": 8,
+    "temperature": 16,
+    "image": "https://img.goodfon.com/original/1920x1080/7/c8/yuzhnaya-amerika-chili-patagoniya-3736.jpg"
+  },
+  {
+    "id": 3,
+    "title_en": "Pyram's, Egypt",
+    "title_ar": "الأهرامات ، مصر",
+    "location_en": "Egypt",
+    "location_ar": "مصر",
+    "price": 1600,
+    "rating": 4.6,
+    "time": 3,
+    "temperature": 38,
+    "image": "https://cdn.tripinafrica.com/places/pyramid-of-giza.jpeg"
+  },
+  {
+    "id": 4,
+    "title_en": "Maldives, Maldives",
+    "title_ar": "جزر المالديف ، المالديف",
+    "location_en": "Maldives",
+    "location_ar": "جزر المالديف",
+    "price": 3500,
+    "rating": 4.9,
+    "time": 5,
+    "temperature": 30,
+    "image": "https://www.andbeyond.com/wp-content/uploads/sites/5/maldives-six-senses-laamu4.jpg"
+  }
+]

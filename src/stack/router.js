@@ -1,4 +1,6 @@
+
 export const router = {
     splasher:"splasher",
-    home:"home"
+    home:"home",
+    CardDatiles:'CardDatiles'
 };

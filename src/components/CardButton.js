@@ -1,9 +1,25 @@
-import React from 'react'
+import {View, Text, Image, Pressable} from 'react-native';
+import React from 'react';
+import {responsiveWidth} from 'react-native-responsive-dimensions';
 
-function CardButton() {
+const CardButton = props => {
   return (
-    <div>CardButton</div>
-  )
-}
+    <View>
 
-export default CardButton
+        <View
+          style={{
+            backgroundColor: 'gray',
+            width: responsiveWidth(11),
+            height: responsiveWidth(11),
+            opacity: 0.8,
+            borderRadius: responsiveWidth(100) / 2,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Image source={props.item} resizeMode="contain" />
+        </View>
+    </View>
+  );
+};
+
+export default CardButton;
