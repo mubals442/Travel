@@ -5,12 +5,11 @@ import {
   responsiveScreenWidth,
 } from 'react-native-responsive-dimensions';
 
-const ButtonUi = ({text, backgroundColor, color, press, isActive}) => {
+const ButtonUi = ({text, backgroundColor, color, press}) => {
   return (
     <TouchableOpacity
       onPress={press}
       style={{
-        borderWidth: 0,
         backgroundColor: backgroundColor,
         width: responsiveScreenWidth(26),
         height: responsiveScreenHeight(6),

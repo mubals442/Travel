@@ -1,17 +1,5 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  TextInput,
-  Image,
-  Pressable,
-  TouchableOpacity,
-} from 'react-native';
+import {SafeAreaView, TextInput, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {
-  responsiveHeight,
-  responsiveWidth,
-} from 'react-native-responsive-dimensions';
 import {style} from '../screens/auth/home/style';
 
 const SearchBar = () => {
