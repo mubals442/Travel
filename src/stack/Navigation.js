@@ -4,18 +4,20 @@ import Home from '../screens/auth/home/Home';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {router} from './router';
 import CardDatiles from '../screens/auth/cardDatiles/CardDatiles';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Navigation = () => {
-  const Stack = createNativeStackNavigator();
+  // const Stack = createNativeStackNavigator();
+  const Tab = createBottomTabNavigator();
 
   return (
-    <Stack.Navigator
+    <Tab.Navigator
       initialRouteName={router.home}
       screenOptions={{headerShown: false}}>
-      <Stack.Screen name={router.splasher} component={Splasher} />
-      <Stack.Screen name={router.home} component={Home} />
-      <Stack.Screen name={router.CardDatiles} component={CardDatiles} />
-    </Stack.Navigator>
+      {/* <Tab.Screen name={router.splasher} component={Splasher} /> */}
+      <Tab.Screen name={router.home} component={Home} />
+      <Tab.Screen name={router.CardDatiles} component={CardDatiles} />
+    </Tab.Navigator>
   );
 };
 

@@ -30,7 +30,9 @@ const Home = ({navigation}) => {
         data={dataOfTravel}
         renderItem={({item}) => (
           <Pressable
-            style={{height: responsiveHeight(50)}}
+            style={{
+              height: responsiveHeight(50),
+            }}
             onPress={() => {
               navigation.navigate(router.CardDatiles);
             }}>

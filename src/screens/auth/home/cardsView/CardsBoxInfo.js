@@ -17,6 +17,7 @@ const CardsBoxInfo = props => {
         padding: 9,
         height: responsiveHeight(9),
         borderRadius: responsiveWidth(3),
+        marginBottom: 13,
       }}>
       <Text style={{color: 'white', zIndex: 999}}>{props.title}</Text>
 

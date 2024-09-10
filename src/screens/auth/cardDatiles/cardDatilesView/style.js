@@ -11,8 +11,17 @@ export const style = StyleSheet.create({
     borderRadius: responsiveWidth(5),
     margin: 30,
     position: 'relative',
-    flexDirection:'column',
-    justifyContent:'space-between'
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 9,
+    },
+    shadowOpacity: 0.48,
+    shadowRadius: 11.95,
+
+    elevation: 18,
   },
   image: {
     width: '100%',
