@@ -5,9 +5,9 @@ import {responsiveHeight} from 'react-native-responsive-dimensions';
 import PlaceInfo from '../../../../components/PlaceInfo';
 
 const Overview = () => {
-  const timeIcon = require('../../../../assets/icons/timeIcon.png');
-  const weatherIcon = require('../../../../assets/icons/weatherIcon.png');
-  const blackStarIcon = require('../../../../assets/icons/blackStarIcon.png');
+  const timeIcon = require('../../../../../assets/icons/timeIcon.png');
+  const weatherIcon = require('../../../../../assets/icons/weatherIcon.png');
+  const blackStarIcon = require('../../../../../assets/icons/blackStarIcon.png');
 
   return (
     <View style={{marginHorizontal: 30}}>
@@ -31,16 +31,12 @@ const Overview = () => {
         <PlaceInfo text={'4.5'} image={blackStarIcon} />
       </View>
 
-
       <View style={{zIndex: 0, marginBottom: 10}}>
         <Text style={{fontSize: 18, textAlign: 'justify'}}>
           This vast mountain range is renowned for its remarkable diversity in
-          terms of topography and climate. It features towering peaks, active
-          volcanoes, deep canyons, expansive plateaus, and lush valleys. The
-          Andes are also home
+          terms of topography and climate. It features
         </Text>
       </View>
-
       <ButtonBook />
     </View>
   );

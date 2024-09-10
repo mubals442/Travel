@@ -9,12 +9,14 @@ import dataObj from '../../../../dataBase/travelInfo.json';
 import {style} from './style';
 import CardDatilesBox from '../cardDatilesBox/CardDatilesBox';
 import {router} from '../../../../stack/router';
+import {useNavigation} from '@react-navigation/native';
 
 const CardDatilesView = props => {
   const [dataOfTravel, setdataOfTravel] = useState([...dataObj]);
+  const saveIcon = require('../../../../../assets/icons/saveIcon.png');
+  const backIcon = require('../../../../../assets/icons/backIcon.png');
 
-  const saveIcon = require('../../../../assets/icons/saveIcon.png');
-  const backIcon = require('../../../../assets/icons/backIcon.png');
+  const navigation = useNavigation();
 
   return (
     <View style={style.view}>
@@ -25,7 +27,7 @@ const CardDatilesView = props => {
       />
 
       <View style={style.viewOfButtons}>
-        <CardButton item={backIcon} />
+        <CardButton item={backIcon} acion={() => navigation.goBack()} />
         <CardButton item={saveIcon} />
       </View>
 

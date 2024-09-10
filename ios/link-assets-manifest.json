@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/font.js",
+      "sha1": "e69330794399682127491dbc79ca5343db84a6b6"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "sha1": "610a7e3e41b664bacabaf02e505846646ccd8340"
+    },
+    {
+      "path": "assets/fonts/ProtestGuerrilla-Regular.ttf",
+      "sha1": "2b8eb6b339e3f1741b1024b8412c8d76c69c7aa8"
+    },
+    {
+      "path": "assets/fonts/Tajawal-Regular.ttf",
+      "sha1": "1139e55d7b8909acda1b9f3f90e30f7774e93fef"
+    }
+  ]
+}

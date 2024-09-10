@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 
 import dataOfUserObj from '../dataBase/user.json';
 import {responsiveWidth} from 'react-native-responsive-dimensions';
+import {font} from '../../assets/fonts/font';
 
 const Header = () => {
   const [user, setUser] = useState({...dataOfUserObj});
@@ -15,7 +16,7 @@ const Header = () => {
         flexDirection: 'row-reverse',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom:13
+        marginBottom: 13,
       }}>
       <View
         style={{
@@ -26,10 +27,12 @@ const Header = () => {
         }}></View>
 
       <View>
-        <Text style={{fontWeight: 'bold', fontSize: 30, color: 'black'}}>
+        <Text style={{fontWeight: 'bold', fontSize: 30, color: 'black',fontFamily: 'Tajawal-Regular'}}>
           Hi, {user.name} 👋
         </Text>
-        <Text style={{fontSize: 20}}>Explore the world</Text>
+        <Text style={{fontSize: 20, fontFamily: 'Tajawal-Regular'}}>
+          Explore the world
+        </Text>
       </View>
     </SafeAreaView>
   );

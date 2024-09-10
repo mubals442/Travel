@@ -5,6 +5,7 @@ import {
   TextInput,
   Image,
   Pressable,
+  TouchableOpacity,
 } from 'react-native';
 import React from 'react';
 import {
@@ -13,8 +14,8 @@ import {
 } from 'react-native-responsive-dimensions';
 
 const SearchBar = () => {
-  const lineIcon = require('../assets/icons/lineIcon.png');
-  const filterIcon = require('../assets/icons/filterIcon.png');
+  const lineIcon = require('../../assets/icons/lineIcon.png');
+  const filterIcon = require('../../assets/icons/filterIcon.png');
 
   return (
     <SafeAreaView
@@ -33,21 +34,22 @@ const SearchBar = () => {
           paddingLeft: 30,
           height: responsiveHeight(7),
           borderRadius: responsiveWidth(4),
+          fontFamily: 'Tajawal-Regular',
         }}
-        placeholder="SearchBar"></TextInput>
+        placeholder="Search"></TextInput>
 
       <Image
         source={lineIcon}
-        style={{position: 'absolute', right: 80, top: 12}}
+        style={{position: 'absolute', right: 80, top: 12,zIndex:999}}
         resizeMode="contain"
       />
-      <Pressable
+      <TouchableOpacity
         onPress={() => {
           console.log('filter');
         }}
         style={{position: 'absolute', right: 30, top: 16}}>
         <Image source={filterIcon} resizeMode="contain" />
-      </Pressable>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };

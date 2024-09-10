@@ -1,4 +1,4 @@
-import {View, Text, Image, Pressable} from 'react-native';
+import {View, Text, Image, Pressable, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {responsiveWidth} from 'react-native-responsive-dimensions';
 import { useNavigation } from '@react-navigation/native';
@@ -8,10 +8,11 @@ const CardButton = props => {
 
   return (
     <View>
-      <Pressable
-        onPress={() => {
-          navigation.goBack();
-        }}
+      <TouchableOpacity
+        onPress={
+          // navigation.goBack();
+          props.acion
+        }
         style={{
           backgroundColor: 'gray',
           width: responsiveWidth(11),
@@ -22,7 +23,7 @@ const CardButton = props => {
           alignItems: 'center',
         }}>
         <Image source={props.item} resizeMode="contain" />
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };

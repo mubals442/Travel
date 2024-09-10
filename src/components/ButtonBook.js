@@ -6,7 +6,7 @@ import {
 } from 'react-native-responsive-dimensions';
 
 const ButtonBook = () => {
-  const sendIcon = require('../assets/icons/sendIcon.png');
+  const sendIcon = require('../../assets/icons/sendIcon.png');
 
   return (
     <Pressable

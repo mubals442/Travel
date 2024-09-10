@@ -7,7 +7,7 @@ import {
 import {style} from './style';
 
 const CardDatilesBox = props => {
-  const markerIcon = require('../../../../assets/icons/markerIcon.png');
+  const markerIcon = require('../../../../../assets/icons/markerIcon.png');
 
   return (
     <View style={style.view}>
@@ -31,10 +31,11 @@ const CardDatilesBox = props => {
             justifyContent: 'center',
             alignItems: 'center',
             marginTop: 5,
-            fontWeight:'bold',
-            fontSize:24
+            fontWeight: 'bold',
+            fontSize: 24,
           }}>
-          <Text style={{fontSize:18,color:"#434343"}}>$</Text>{props.price}
+          <Text style={{fontSize: 18, color: '#434343'}}>$</Text>
+          {props.price}
         </Text>
       </View>
     </View>

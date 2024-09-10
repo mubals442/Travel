@@ -10,12 +10,15 @@ export const style = StyleSheet.create({
   },
   textBold: {
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 20,
     color: 'black',
+    fontFamily: 'Tajawal-Regular',
   },
   text: {
     color: '#888888',
     fontWeight: '600',
+    fontSize: 19,
+    fontFamily: 'Tajawal-Regular',
   },
   buttonView: {
     flexDirection: 'row',
