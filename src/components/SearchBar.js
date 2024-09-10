@@ -12,42 +12,28 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from 'react-native-responsive-dimensions';
+import {style} from '../screens/auth/home/style';
 
 const SearchBar = () => {
   const lineIcon = require('../../assets/icons/lineIcon.png');
   const filterIcon = require('../../assets/icons/filterIcon.png');
 
   return (
-    <SafeAreaView
-      style={{
-        marginHorizontal: 30,
-        marginTop: 15,
-        marginBottom: 13,
-        position: 'relative',
-      }}>
+    <SafeAreaView style={style.SearchBar.SafeAreaView}>
       <TextInput
-        style={{
-          borderWidth: 2,
-          borderColor: '#D2D2D2',
-          color: '#888888',
-          width: '100%',
-          paddingLeft: 30,
-          height: responsiveHeight(7),
-          borderRadius: responsiveWidth(4),
-          fontFamily: 'Tajawal-Regular',
-        }}
-        placeholder="Search"></TextInput>
+        style={style.SearchBar.TextInput}
+        placeholder="Search places"></TextInput>
 
       <Image
         source={lineIcon}
-        style={{position: 'absolute', right: 80, top: 12,zIndex:999}}
+        style={style.SearchBar.Image}
         resizeMode="contain"
       />
       <TouchableOpacity
         onPress={() => {
           console.log('filter');
         }}
-        style={{position: 'absolute', right: 30, top: 16}}>
+        style={style.SearchBar.TouchableOpacity}>
         <Image source={filterIcon} resizeMode="contain" />
       </TouchableOpacity>
     </SafeAreaView>

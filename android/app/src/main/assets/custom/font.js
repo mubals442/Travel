@@ -1,3 +1,5 @@
 export const font ={
-    regular:'Tajawal-Regular'
+    regular:'Tajawal-Regular',
+    extraLight:'Tajawal-ExtraLight',
+    
 }

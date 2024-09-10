@@ -6,8 +6,8 @@ import {
 } from 'react-native-responsive-dimensions';
 
 const CardsBoxInfo = props => {
-  const starIcon = require('../../../../../assets/icons/starIcon.png');
-  const markerIcon = require('../../../../../assets/icons/markerIcon.png');
+  const starIcon = require('../../../../assets/icons/starIcon.png');
+  const markerIcon = require('../../../../assets/icons/markerIcon.png');
 
   return (
     <View

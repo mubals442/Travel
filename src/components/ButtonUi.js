@@ -1,18 +1,17 @@
-import {View, Text, Pressable, Touchable} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {
   responsiveScreenHeight,
   responsiveScreenWidth,
 } from 'react-native-responsive-dimensions';
 
-const ButtonUi = props => {
+const ButtonUi = ({text, backgroundColor, color, press, isActive}) => {
   return (
-    <Pressable
-    onPress={() => {console.log(props.press)}}
+    <TouchableOpacity
+      onPress={press}
       style={{
         borderWidth: 0,
-        // backgroundColor: '#2F2F2F',
-        backgroundColor: `${props.backgroundColor}`,
+        backgroundColor: backgroundColor,
         width: responsiveScreenWidth(26),
         height: responsiveScreenHeight(6),
         borderRadius: responsiveScreenWidth(5),
@@ -20,13 +19,12 @@ const ButtonUi = props => {
       }}>
       <Text
         style={{
-          // color: '#ffffff',
-          color: `${props.color}`,
+          color: color,
           textAlign: 'center',
         }}>
-        {props.text}
+        {text}
       </Text>
-    </Pressable>
+    </TouchableOpacity>
   );
 };
 

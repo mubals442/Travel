@@ -1,13 +1,13 @@
 import {View, Text, Pressable} from 'react-native';
 import React from 'react';
-import ButtonBook from '../../../../components/ButtonBook';
+import ButtonBook from '../../../components/ButtonBook';
 import {responsiveHeight} from 'react-native-responsive-dimensions';
-import PlaceInfo from '../../../../components/PlaceInfo';
+import PlaceInfo from '../../../components/PlaceInfo';
 
-const Overview = () => {
-  const timeIcon = require('../../../../../assets/icons/timeIcon.png');
-  const weatherIcon = require('../../../../../assets/icons/weatherIcon.png');
-  const blackStarIcon = require('../../../../../assets/icons/blackStarIcon.png');
+const Overview = props => {
+  const timeIcon = require('../../../../assets/icons/timeIcon.png');
+  const weatherIcon = require('../../../../assets/icons/weatherIcon.png');
+  const blackStarIcon = require('../../../../assets/icons/blackStarIcon.png');
 
   return (
     <View style={{marginHorizontal: 30}}>
@@ -26,15 +26,17 @@ const Overview = () => {
           justifyContent: 'space-between',
           height: responsiveHeight(5),
         }}>
-        <PlaceInfo text={'8 hours'} image={timeIcon} />
-        <PlaceInfo text={'16 C'} image={weatherIcon} />
-        <PlaceInfo text={'4.5'} image={blackStarIcon} />
+        <PlaceInfo text={`${props.time} hours`} image={timeIcon} />
+        <PlaceInfo
+          text={`${props.temperature} ${'\u00b0'}C`}
+          image={weatherIcon}
+        />
+        <PlaceInfo text={`${props.rating}`} image={blackStarIcon} />
       </View>
 
       <View style={{zIndex: 0, marginBottom: 10}}>
         <Text style={{fontSize: 18, textAlign: 'justify'}}>
-          This vast mountain range is renowned for its remarkable diversity in
-          terms of topography and climate. It features
+          {props.overview}
         </Text>
       </View>
       <ButtonBook />

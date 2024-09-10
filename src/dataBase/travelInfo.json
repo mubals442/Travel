@@ -8,6 +8,7 @@
     "price": 2750,
     "rating": 4.8,
     "time": 16,
+    "overview_en": "Climbing Mount Fuji is a popular activity during the summer months, but it requires preparation and physical fitness. The experience of witnessing the sunrise from the summit and the panoramic views of the surrounding landscape make it a memorable adventure for many visitors.",
     "temperature": 6,
     "image": "https://www.tatbeqi.com/wp-content/uploads/2017/03/3-57.jpg"
   },
@@ -20,6 +21,7 @@
     "price": 2250,
     "rating": 4.7,
     "time": 8,
+    "overview_en": "The Andes are not only a geographical marvel but also a cultural and ecological treasure, offering a wealth of experiences for those who explore this remarkable mountain range.",
     "temperature": 16,
     "image": "https://img.goodfon.com/original/1920x1080/7/c8/yuzhnaya-amerika-chili-patagoniya-3736.jpg"
   },
@@ -32,6 +34,7 @@
     "price": 1600,
     "rating": 4.6,
     "time": 3,
+    "overview_en": "Pyramids continue to captivate people's imaginations with their grandeur, mystery, and historical significance, serving as enduring symbols of ancient civilizations' achievements and beliefs.",
     "temperature": 38,
     "image": "https://cdn.tripinafrica.com/places/pyramid-of-giza.jpeg"
   },
@@ -44,6 +47,7 @@
     "price": 3500,
     "rating": 4.9,
     "time": 5,
+    "overview_en": "The Maldives offers a unique blend of luxury, natural beauty, and cultural richness, making it a sought-after destination for travelers looking to experience a tropical paradise in the heart of the Indian Ocean.",
     "temperature": 30,
     "image": "https://www.andbeyond.com/wp-content/uploads/sites/5/maldives-six-senses-laamu4.jpg"
   }

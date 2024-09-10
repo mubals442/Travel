@@ -1,4 +1,4 @@
-import {View, Text, Pressable, Image} from 'react-native';
+import {View, Text, Pressable, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {
   responsiveHeight,
@@ -9,18 +9,19 @@ const ButtonBook = () => {
   const sendIcon = require('../../assets/icons/sendIcon.png');
 
   return (
-    <Pressable
+    <TouchableOpacity
       onPress={() => {
         console.log('Book Now');
       }}
       style={{
-        position: 'sticky',
-        bottom: 0,
+        // position: 'sticky',
+        // bottom: 0,
         backgroundColor: 'black',
         justifyContent: 'center',
         alignItems: 'center',
         height: responsiveHeight(8),
         borderRadius: responsiveWidth(5),
+        marginVertical:responsiveWidth(3),
         flexDirection: 'row',
         zIndex: 999,
       }}>
@@ -28,7 +29,7 @@ const ButtonBook = () => {
         Book Now
       </Text>
       <Image source={sendIcon} style={{marginLeft: 15}} />
-    </Pressable>
+    </TouchableOpacity>
   );
 };
 

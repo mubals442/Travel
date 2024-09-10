@@ -1,25 +1,28 @@
 import {
-
   SafeAreaView,
   FlatList,
   Pressable,
+  TouchableOpacity,
 } from 'react-native';
 import React, {useState} from 'react';
-import Header from '../../../components/Header';
+import Header from './Header';
 import SearchBar from '../../../components/SearchBar';
-import FilterButtons from './filterButtons/FilterButtons';
-import CardsView from './cardsView/CardsView';
+import FilterButtons from './FilterButtons';
+import CardsView from './CardsView';
 import dataObj from '../../../dataBase/travelInfo.json';
 import {router} from '../../../stack/router';
 import {responsiveHeight} from 'react-native-responsive-dimensions';
+import {style} from './style';
 
 const Home = ({navigation}) => {
   const [dataOfTravel, setdataOfTravel] = useState([...dataObj]);
 
   return (
     <SafeAreaView>
-      <Header />
+      <Header goTo={() => navigation.navigate(router.Profile)} />
+
       <SearchBar />
+
       <FilterButtons />
 
       <FlatList
@@ -27,12 +30,10 @@ const Home = ({navigation}) => {
         horizontal
         data={dataOfTravel}
         renderItem={({item}) => (
-          <Pressable
-            style={{
-              height: responsiveHeight(50),
-            }}
+          <TouchableOpacity
+            style={style.Home.TouchableOpacity}
             onPress={() => {
-              navigation.navigate(router.CardDatiles);
+              navigation.navigate(router.CardDatiles, {data: item});
             }}>
             <CardsView
               title={item.title_en}
@@ -40,7 +41,7 @@ const Home = ({navigation}) => {
               image={item.image}
               rating={item.rating}
             />
-          </Pressable>
+          </TouchableOpacity>
         )}
         keyExtractor={item => item.id}
       />
