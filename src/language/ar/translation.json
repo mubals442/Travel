@@ -1,0 +1,29 @@
+[
+  {
+    "home": {
+      "header": {
+        "hi": "",
+        "welcomeMessage": ""
+      },
+      "searchBar": {
+        "searchPlaces": ""
+      },
+      "filterButtons": {
+        "PopularPlaces": "",
+        "viewAll": "",
+        "mostViewed": "",
+        "nearby": "",
+        "latest": ""
+      }
+    },
+    "cardDatiles": {
+      "CardDatilesBox": {
+        "priceWord": ""
+      },
+      "overview": {
+        "overviewWord": "",
+        "detailsWord": ""
+      }
+    }
+  }
+]

@@ -1,9 +1,4 @@
-import {
-  SafeAreaView,
-  FlatList,
-  Pressable,
-  TouchableOpacity,
-} from 'react-native';
+import {SafeAreaView, FlatList, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import Header from './Header';
 import SearchBar from '../../../components/SearchBar';
@@ -11,7 +6,6 @@ import FilterButtons from './FilterButtons';
 import CardsView from './CardsView';
 import dataObj from '../../../dataBase/travelInfo.json';
 import {router} from '../../../stack/router';
-import {responsiveHeight} from 'react-native-responsive-dimensions';
 import {style} from './style';
 
 const Home = ({navigation}) => {
@@ -45,6 +39,7 @@ const Home = ({navigation}) => {
         )}
         keyExtractor={item => item.id}
       />
+      
     </SafeAreaView>
   );
 };

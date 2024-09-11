@@ -28,7 +28,9 @@ const FilterButtons = () => {
               text={item}
               backgroundColor={activeFilter === item ? '#2F2F2F' : '#FBFBFB'}
               color={activeFilter === item ? '#ffffff' : '#C5C5C5'}
-              press={() => setActiveFilter(item)}
+              press={() => {
+                setActiveFilter(item), console.log(item);
+              }}
             />
           );
         })}
